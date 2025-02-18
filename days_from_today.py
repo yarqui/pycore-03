@@ -1,6 +1,6 @@
 from datetime import datetime
 
-def get_days_from_today(date: str) -> int:
+def get_days_from_today(date: str) -> int | None:
     try:
         if type(date) is not str:
             raise TypeError('Date should be an integer')
